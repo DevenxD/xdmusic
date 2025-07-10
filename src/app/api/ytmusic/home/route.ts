@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import YTMusic from "ytmusic-api";
 
-export async function GET(request: NextRequest) {
+export async function GET() {
     const ytmusic = new YTMusic();
     await ytmusic.initialize(/* Optional: Custom cookies */);
 
